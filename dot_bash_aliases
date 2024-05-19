@@ -1,0 +1,24 @@
+alias hosts='sudo nano /etc/hosts'
+alias http-server="python -m http.server"
+alias adb_set_proxy="adb shell settings put global http_proxy $(ip -o -4 addr show enp7s0|awk '{print $4}' | sed 's/\/.*//g'):8080"
+alias adb_unset_proxy="adb shell settings put global http_proxy :0"
+
+alias vol2="~/volatility/volatility_2.6"
+alias vol="~/volatility3/vol.py"
+alias villain="~/Villain/Villain.py"
+
+alias http-server="python -m http.server"
+
+alias play-ctf="pyenv activate ctf"
+alias work="cd ~/Desktop/work/"
+
+alias docker-clean="docker system prune -a"
+alias docker-compose-clean="docker compose down --volumes --remove-orphans"
+
+alias docker-kill-all="docker kill $(docker ps -q)"
+alias docker-rm-all="docker rm $(docker ps -a -q)"
+alias docker-rmi-all="docker rmi $(docker images -q)"
+
+alias extract="dtrx"
+
+export rockyou="/home/atreus/Utils/SecLists/rockyou.txt"
